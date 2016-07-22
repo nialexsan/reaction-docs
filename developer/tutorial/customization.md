@@ -56,10 +56,10 @@ Now this package effectively does nothing until we start adding some files so le
 
 Let's create a `styles` directory under client and create a `main.less` file. Now if wanted to start from a complete blank "canvas" we could just add CSS here but for the purposes of this tutorial we are going to be using bootstrap and also rely on our default theme. In real life however you don't need to do this, you can pick and choose what parts you want to import. But even if you import then, you can of course override them.
 
-So since we are going to inherit styles into our plugin we don't want them inserted twice so we will comment-out the import in `client/main.js`
+So since we are going to inherit styles into our plugin we don't want them inserted twice so we will comment-out the import in `client/plugins.js`
 
 ``` javascript
-// import "/imports/themes/default";
+// import "/imports/plugins/included/default-theme/client";
 ```
 
 (if you, like me, like to see things happen as you make changes and are currently running the Reaction app, once you comment out that line you should be left with a completely unstyled site.)
