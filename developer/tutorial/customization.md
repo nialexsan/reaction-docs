@@ -202,7 +202,7 @@ Now we need to import all the default styles from the default Reaction theme.
 @import "/imports/themes/default/styles/products/productList.less";
 ```
 
-Because the `plugins` folder is inside the `imports` folder your code will have no effect until it is imported. So we need to add an `index.js` file and the root of the `client` directory that imports our `main.less`. This index files let's us keep the import clean. The contents of that file are:
+Because the `plugins` folder is inside the `imports` folder your code will have no effect until it is imported. So we need to add an `index.js` file into the root of the `client` directory that imports our `main.less`. This index files let's us keep the import clean. The contents of that file are:
 
 ``` javascript
 import "./styles/main.less";
